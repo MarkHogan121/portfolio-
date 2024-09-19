@@ -367,7 +367,7 @@ header .logo{
         background-color: #030b1a;
         backdrop-filter: blur(10px);
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         z-index: 100;
     }
@@ -442,9 +442,9 @@ header .logo{
     width: 320px;
     padding-right: -10px;
 }
-.logofolio .row4{
-    /* margin-top: -88px; */
-}
+/* .logofolio .row4{
+    margin-top: -88px;
+} */
 .logofolio .row5{
     margin-top: -118px;
 }
@@ -523,9 +523,6 @@ header .logo{
 @media screen and (max-width: 700px) {
 
 /* HEADER */
-    .header a{
-        font-size: 12px;
-    }
     header{
         width: 100%;
         position: fixed;
@@ -540,7 +537,7 @@ header .logo{
         z-index: 100;
     }
     header .logo{
-        font-size: 22px;
+        font-size: 16px;
         color: black;
         font-weight: 600;
         transition: 0.3s ease;
@@ -667,6 +664,15 @@ header .logo{
 .social .reddit i{
     font-size: 25px;
 }
+.social .discord i{
+    margin-left: 2px;
+}
+.social .gmail i{
+    margin-left: 4px;
+}
+.social .gmail p{
+    margin-left: 23px;
+}
 .social i{
     padding: 14px 0;
     /* margin-top: 10px */
@@ -681,18 +687,5 @@ header .logo{
 }
 .logo-branding .row2{
     margin-top: 0;
-}
-header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 15px 2%;
-    background-color: #030b1a;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
 }
 }
