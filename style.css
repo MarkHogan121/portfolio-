@@ -1,0 +1,685 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #040f25;
+}
+.contact-me span{
+    color: rgb(255, 175, 54);
+}
+.for-mob{
+    display: none;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 35px 2%;
+    background-color: #030b1a;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header .logo{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: #8AC4FF;
+    text-shadow: 0 0 25px #8AC4FF,
+                 0 0 50px #8AC4FF;
+    transform: scale(1.1);
+}
+.blue-color{
+    color: #8AC4FF;
+}
+.navbar a{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #8AC4FF;
+    border-bottom: 3px solid transparent;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+    color: #ffffff;
+}
+.home-content h1{
+    font-size: 52px;
+    color: #ffffff;
+}
+.home-content p{
+    font-size: 22px;
+    color: #ffffff;
+    margin: 25px 0 30px;
+}
+
+
+.social{
+    /* display: flex; */
+    font-size: 25px;
+    align-items: center;
+    color: #8AC4FF;
+}
+.social a:visited, .social a:active{
+    color: #8AC4FF;
+}
+.reddit{
+    margin-left: -8px;
+    font-size: 29px;
+    margin-top: -5px;
+}
+.reddit , .discord , .gmail{
+    /* padding: 0 10px; */
+    margin: -20px;
+    margin-left: -1%;
+    cursor: pointer;
+    display: flex;
+}
+.reddit p , .discord p, .gmail p{
+    margin-left: 20px;
+    margin-top: 2px;
+    font-size: 20px;
+    color: #8AC4FF;
+}
+.social{
+    margin-top: 40px;
+    margin-left: 2px;
+}
+.social .gmail p{
+    margin-left: 24px;
+}
+.social .gmail i{
+    margin-left: 1px;
+}
+.social .reddit i{
+    margin-left: 2px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 8px 12px;
+    background: #8AC4FF;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: #f2fbf2;
+    color: #040f25;
+    border: 2px solid #ffffff;
+}
+.btn-2{
+    padding: 15px 28px;
+    background: #8AC4FF;
+    color: black;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: #f2fbff;
+    color: #040f25;
+}
+.img-box img{
+    width: 300px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #8AC4FF;
+}
+::-webkit-scrollbar-track{
+    background-color: #ffffff;
+    width: 50px;
+}
+
+.logos, #portfolio , #web-design{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.logos img{
+    width: 450px;
+}
+
+.box-shadow{
+    padding-bottom: -10;
+    margin: 10px 10px;
+}
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input, .contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: #ffffff;
+    background: rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+.contact-me{
+    color: #ffffff;
+}
+.contact-me span{
+    color: #8AC4FF;
+}
+
+.logofolio, .web-design, .branding{
+    text-align: center;
+}
+.web-design{
+    margin-top: 16px;
+}
+.logofolio-heading h1, .web-design-heading h1, .branding h1{
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: #8AC4FF;
+    cursor: pointer;
+}
+.branding h1{
+    margin-top: 30px;
+}
+.logo-des .row1{
+    margin-top: -26px;
+}
+.logo-des .row3{
+    margin-top: -58px;
+}
+
+/* .logo-branding .row2{
+    margin-top: -56px;
+}
+.logo-branding .row3{
+    margin-top: -284px;
+} */
+
+.web-des .row2{
+    margin-top: -230px;
+}
+
+.row4, .row5{
+    display: none;
+}
+
+
+.web-des{
+    display: flex;
+    flex-wrap: wrap;
+}
+.web-des , .row1 , .row2{
+    flex-wrap: wrap;
+    padding: 2px;
+}
+.web-des .row1{
+    margin-top: -56px;
+}
+.web-des img{
+    width: 600px;
+}
+.web-design-heading h1{
+    margin: 50px 0;
+}
+.web-design-heading h1{
+    margin-bottom: 90px;
+}
+
+.intro-head{
+    font-size: 20px;
+}
+#message{
+    color: black;
+}
+/* ANIMATION */
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.logo-des .box-shadow ,.logo-branding .box-shadow{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30% ;
+}
+
+.web-des .box-shadow{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 18% ;
+}
+
+/* PATA NHI KONSI SCREEN */
+@media (max-width : 1426px) and (min-width : 960px){
+
+    .logofolio .row1, .logofolio .row2, .logofolio .row3{
+        display: none;
+    }
+    .logofolio .row4 , .logofolio .row5 {
+        display: block;
+    }
+    .logofolio .row5{
+        margin-top: -200px;
+    }
+
+    /* BRANDING */
+        /* .branding-heading h1{
+            font-size: 80px;
+        }
+        .logo-branding .row4{
+            margin-bottom: -96px;
+        }
+        .logo-branding .row1 ,.logo-branding .row2, .logo-branding .row3{
+            display: none;
+        }
+        .logo-branding .row4 , .row5{
+            display: block;
+        }
+        .logo-branding .row4{
+            margin-top: -280px;
+        }
+        .logo-branding .row4 img,.logo-branding .row5 img{
+            width: 456px;
+        }
+        .contact-me span{
+           color: #8AC4FF;
+        } */
+}
+
+/* TABLET SCREEN */
+@media (max-width : 960px) and (min-width : 700px){
+    /* HEADER */
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 35px 2%;
+        background-color: #030b1a;
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    header .logo{
+        font-size: 32px;
+        color: #ffffff;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+    .logo:hover{
+        color: #8AC4FF;
+        text-shadow: 0 0 25px #8AC4FF,
+                     0 0 50px #8AC4FF;
+        transform: scale(1.1);
+    }
+    span{
+        color: #8AC4FF;
+    }
+    .navbar a{
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 500;
+        margin: 0 20px;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+    }
+    .navbar a:hover,
+    .navbar a.active{
+        color: #8AC4FF;
+        border-bottom: 3px solid transparent;
+    }
+
+    
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 100px 12% 0;
+}
+
+/* WEB DESIGN SEC */
+.web-des{
+    display: flex;
+    flex-wrap: wrap;
+}
+.web-des , .row1 , .row2{
+    flex-wrap: wrap;
+    padding: 2px;
+}
+.web-des .row1{
+    margin-bottom: 44px;
+}
+.web-des img{
+    width: 310px;
+}
+.web-design-heading h1{
+    margin: 50px 0;
+}
+.web-design h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.web-design .row1{
+    margin-top: 16px;
+}
+
+
+/* LOGOFOLIO */
+.logofolio img{
+    width: 320px;
+    padding-right: -10px;
+}
+.logofolio .row4{
+    /* margin-top: -88px; */
+}
+.logofolio .row5{
+    margin-top: -118px;
+}
+.logofolio h1{
+    font-size: 50px;
+}
+.logofolio .row1 , .logofolio .row2 , .logofolio .row3{
+    display: none;
+}
+.logofolio .row4 , .logofolio-heading .row5{
+    display: block;
+}
+
+/* BRANDING */
+.branding-heading h1{
+    font-size: 50px;
+}
+.logo-branding .row4{
+    margin-bottom: -96px;
+}
+.logo-branding .row1 ,.logo-branding .row2, .logo-branding .row3{
+    display: none;
+}
+.logo-branding .row4 , .row5{
+    display: block;
+}
+.logo-branding .row4{
+    margin-top: -246px;
+}
+.logo-branding .row5{
+    margin-top: -20px;
+}
+.logo-branding .row4 img{
+    width: 320px;
+}
+.logo-branding .row5 img{
+    width: 320px;
+}
+
+/* INTRO */
+.home-content{
+    margin-left: -20%;
+}
+.home-content h3{
+    font-size: 30px;
+}
+.home-content h1{
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.home-content p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 26px;
+}
+.social .reddit i{
+    margin-top: 6px;
+}
+.social .discord i{
+    margin-top: 10px;
+}
+.social .gmail i{
+    margin-top: 10px;
+}
+.web-des img{
+    width: 660px;
+}
+}
+
+
+
+
+/* MOBILE SCREEN */
+@media screen and (max-width: 700px) {
+
+/* HEADER */
+    .header a{
+        font-size: 12px;
+    }
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px 1%;
+        background-color: #030b1a;
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    header .logo{
+        font-size: 22px;
+        color: black;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+    .logo:hover{
+        color: #8AC4FF;
+        text-shadow: 0 0 25px #8AC4FF,
+                     0 0 50px #8AC4FF;
+        transform: scale(1.1);
+    }
+    .social a:visited, .social a:active , .social .reddit:active , .social .gmail:active , .social .reddit:visited , .social .gmail:visited{
+        color: #8AC4FF;
+    }
+    #changing{        
+         color: #ffffff;
+    }
+    span{
+        color: #8AC4FF;
+    }
+    .navbar a{
+        font-size: 8px;
+        color: #ffffff;
+        font-weight: 500;
+        margin: 0 8px;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+    } 
+    .navbar a:hover,
+    .navbar a.active{
+        color: #8AC4FF;
+        border-bottom: 3px solid transparent;
+    }
+    .social{
+        color: #8AC4FF;
+    }
+
+    
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 100px 10% 0;
+
+}
+
+/* WEB DESIGN SEC */
+.web-des{
+    display: flex;
+    flex-wrap: wrap;
+}
+.web-des , .row1 , .row2{
+    flex-wrap: wrap;
+    padding: 2px;
+}
+.web-des .row1{
+    margin-top: -56px;
+}
+.web-des img{
+    width: 400px;
+}
+.web-design-heading h1{
+    margin: 50px 0;
+}
+.web-design h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.web-design .row1{
+    margin-top: 16px;
+}
+
+
+/* LOGOFOLIO */
+.logofolio img{
+    width: 300px;
+    padding-left: -70px;
+}
+.logofolio h1, .branding-heading h1{
+    font-size: 50px;
+}
+.logofolio h1{
+    margin-bottom: 90px;
+}
+.logofolio .row4 , .logofolio .row5 {
+    display: block;
+}
+.logo-des .row1,.logo-des .row2,.logo-des .row3{
+    display: none;
+}
+.logo-des .row5{
+    margin-top: -160px;
+}
+.logo-des .row4{
+    margin-top: -50px;
+}
+
+/* INTRO */
+.home-content{
+    margin-left: -26%;
+}
+.home-content h3{
+    font-size: 24px;
+}
+.home-content h1{
+    font-size: 30px;
+    line-height: 34px;
+
+}
+.home-content p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.social{
+    font-size: 16px;
+    margin: 0;
+    margin-top: 40px;
+}
+.social a{
+    font-size: 20px;
+}
+.social .reddit i{
+    font-size: 25px;
+}
+.social i{
+    padding: 14px 0;
+    /* margin-top: 10px */
+    margin-top: -5px;
+}
+.social .reddit p{
+    margin-left: 17px;
+}
+/* BRANDING */
+.logo-branding img{
+    width: 300px;
+}
+.logo-branding .row2{
+    margin-top: 0;
+}
+}
